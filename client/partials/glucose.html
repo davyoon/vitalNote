@@ -1,0 +1,33 @@
+<div class="col-sm-12 input-form">	
+	<form ng-submit="createGlucose()" class="pull-right">
+		<select name="glucoseSelect" id="glucoseSelect" ng-model="search.filter" class="form-control dropdown inline">
+		</select>
+		<input type="text" placeholder="mg/dL" class="form-control input-box inline" ng-model="glucose.reading">
+		<button type="submit" class="btn">Submit</button>
+	</form>
+</div>
+
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Date</th>
+			<th>Time</th>
+			<th>&nbsp;</th>
+			<th>mg/dL</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr ng-repeat="glucose in glucoses | filter:search:strict" class="readings">
+			<td>{{glucose.time | date}}</td>
+			<td>{{glucose.time | date: "HH:mm"}}</td>
+			<td>&nbsp;</td>
+			<td>{{glucose.level}}</td>
+			<td><button class="btn btn-danger"ng-click="removeGlucose(glucose.glucose_id)">Delete</button></td>
+		</tr>	
+	</tbody>	
+</table>
+
+<div></div>

@@ -1,0 +1,186 @@
+.login-body{
+	background-image: url('../images/doctor.jpeg');
+	background-position: center;
+	background-attachment: fixed;
+  background-size: cover;
+}
+
+.app-name{
+	font-size: 70px;
+	text-align: center;
+	font-family: 'Antic Slab', serif;
+	text-shadow: 3px 3px black;
+	letter-spacing: 7px;
+}
+
+.form-container{
+	background-color: rgba(0,0,0,0.6);
+	color: white;
+	padding: 30px 30px;
+	border: 5px solid white;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+	margin-top: 120px;
+}
+
+.top-header{
+	height: 40px;
+	font-size: 20px;
+	background-color: rgba(0,0,0,0.5);
+	padding-left: 20px;
+	padding-right: 20px;
+	position: fixed;
+}
+
+.logout{
+	padding-top: 5px;
+	color: black;
+}
+
+.logout:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.logout:focus{
+	text-decoration: none;
+}
+
+.logout:link{
+	color: white;
+	text-decoration: none;
+}
+
+.logout:active{
+	color: white;
+	text-decoration: none;
+}
+
+.logo{
+	width: 120px;
+	height: auto;
+}
+
+.main-body{
+	background-image: url('../images/light_grey.png')
+}
+
+.welcome-message{
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Antic Slab', serif;
+	letter-spacing: 5px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.tabs{
+	margin-bottom: 30px;
+}
+
+.about{
+	border: 5px solid rgba(0,0,0,0.6); 
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+	font-size: 25px;
+	font-family: 'Pinyon Script', cursive;
+	letter-spacing: 3px;
+	padding: 50px 50px;
+	line-height: 40px;
+	text-indent: 55px;
+	margin-bottom: 70px;
+}
+
+.input-box{
+	width: 80px;
+	display: inline-block;
+}
+
+.input-form{
+	text-align: right;
+	padding-right: 0px;
+	margin-bottom: 70px;
+}
+
+.dropdown{
+	width: 100px;
+}
+
+.inline{
+	display: inline-block;
+}
+
+.table{
+	font-size: 16px;
+}
+
+@media(max-width: 500px){
+    .input-form{
+        margin-left: -40px;
+    }
+    .hideMe{
+    	display: none;
+    }
+    .table{
+    	font-size: 14px;
+    }
+    .app-name{
+    	font-size: 60px;
+    }
+}
+
+.print{
+	font-size: 15px;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

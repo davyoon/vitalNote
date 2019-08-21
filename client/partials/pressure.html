@@ -1,0 +1,101 @@
+<div class="col-sm-12 input-form">
+	<form ng-submit="createPressure()" class="pull-right">
+		<select name="pressureSelect" id="pressureSelect" ng-model="search.filter" class="form-control dropdown inline">
+		</select>
+		<input type="text" placeholder="systolic" class="form-control input-box inline" ng-model="pressure.systolic"><span style="font-size: 20px">&nbsp; / &nbsp;</span>
+		<input type="text" placeholder="diastolic" class="form-control input-box inline" ng-model="pressure.diastolic">
+		<button type="submit" class="btn">Submit</button>
+	</form>
+</div>	
+
+
+	<!-- <h1> There are {{pressures.length}} pressures</h1> -->
+	
+		<!-- <div ng-repeat="pressure in pressures | filter:search:strict" class="readings">
+			<
+			{{pressure.time | date: "HH:mm"}} ||
+			{{pressure.time | date}} || 
+			{{pressure.systolic}} /
+			{{pressure.diastolic}}
+			<button class="btn btn-danger"ng-click="removePressure(pressure.pressure_id)">Delete</button>
+		<hr>
+		</div> -->
+
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Time</th>
+					<th class='hideMe'>&nbsp;</th>
+					<th>Systolic</th>
+					<th class='hideMe'></th>
+					<th class='hideMe'>&nbsp;</th>
+					<th>Diastolic</th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr ng-repeat="pressure in pressures | filter:search:strict" class="readings">
+					<td>{{pressure.time | date}}</td>
+					<td>{{pressure.time | date: "HH:mm"}}</td>
+					<td class='hideMe'>&nbsp;</td>
+					<td>{{pressure.systolic}}</td>
+					<td class='hideMe'>/</td>
+					<td class='hideMe'>&nbsp;</td>
+					<td>{{pressure.diastolic}}</td>
+					<td><button class="btn btn-danger"ng-click="removePressure(pressure.pressure_id)">Delete</button></td>
+				</tr>	
+			</tbody>	
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
