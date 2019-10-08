@@ -9,6 +9,7 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var PORT = process.env.PORT || 9000;
 
 app.use('/js', express.static(__dirname + '/client/js'));
 app.use('/partials', express.static(__dirname + '/client/partials'));
@@ -205,6 +206,6 @@ app.delete('/api/glucoses/:id', function(req, res){
 
 
 
-app.listen(9000, function(){
+app.listen(PORT, function(){
 	console.log("I'm liistening...");
 });
