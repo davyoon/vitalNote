@@ -56,6 +56,6 @@ Username - guest
 Password - guest
 
 ## Deployment
-*
-*
+* <a href="https://vital-note.herokuapp.com">Heroku</a>
+* <a href="https://github.com/davyoon/vitalNote">Github</a>
 
