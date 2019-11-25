@@ -1,20 +1,35 @@
-#VITAL NOTE
+## Description
 
-VITAL NOTE is a single-page application to help the user's PCP to determine whether their current or new medication is working for them.  Users can keep records of their blood pressure and blood sugar readings. Users can sort readings by month and print out the month's readings.
+Patients often get prescribed the wrong dosage of their medication because doctors only see their readings when they visit the office. VITAL NOTE is a single-page application to help the user's PCP to determine whether their current or new medication is working for them.  Users can keep records of their blood pressure and blood sugar readings. Users can sort readings by month and print out the month's readings.
 
-##Minimum Viable Product
+![Demo](./img/vitalgif.gif)
+
+## Technologies
+* HTML/CSS
+* JavaScript
+* jQuery
+* Bootstrap
+* Node.js
+* Express.js
+* Angular.js
+* SQLite3
+* Browserify
+* Watchify
+* Passport
+
+## Minimum Viable Product
 * Users can log in
 * Create, Read, and Delete for blood pressure readings
 * Create, Read, and Delete for blood glucose readings
 * Insert date/time automatically
 
-##Wireframe
+## Wireframe
 ![wireframe](./img/vital_wireframe.jpg)
 
-##ERD
+## ERD
 ![erd](./img/vital_erd.jpg)
 
-##Routes
+## Routes
 Backend
 
 * app.get('/')
@@ -36,15 +51,11 @@ Frontend
 * '/glucose'
 * '/'
 
-##Technologies
-* HTML/CSS
-* JavaScript
-* jQuery
-* Bootstrap
-* Node.js
-* Express.js
-* Angular.js
-* SQLite3
-* Browserify
-* Watchify
-* Passport
+## Login
+Username - guest
+Password - guest
+
+## Deployment
+*
+*
+
